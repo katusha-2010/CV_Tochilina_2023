@@ -1,12 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV Tochilina</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="back-burger"></div>
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#education">Education</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#about">About me</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <span class="header__burger-line"></span>
+        </div>
+      </header>
+      <main class="main">
+        <div class="column-left">
+          <section class="column-left__top-block">
+            <div class="profile">
+              <img
+                class="profile__image"
+                src="./assets/photo.jpg"
+                alt="avatar"
+              />
+              <h1 class="profile__title">Ekaterina Tochilina</h1>
+              <div class="profile__subtitle">Front-end Developer</div>
+            </div>
+            <h2 id="contacts">CONTACTS</h2>
+            <ul class="contacts">
+              <li class="contacts__item">Minsk, Belarus</li>
+              <li class="contacts__item">+ 375 29 618-20-14</li>
+              <li class="contacts__item">
+                <a href="mailto:katusha-2010@mail.ru" title="email"
+                  >katusha-2010@mail.ru</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="https://github.com/katusha-2010"
+                  >Ekaterina Tochilina</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="https://www.linkedin.com/in/ekaterina-tochilina-755366250/"
+                  >Ekaterina Tochilina</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="https://t.me/Katusha2010">Katusha2010</a>
+              </li>
+            </ul>
+          </section>
+          <section class="education-section">
+            <h2 id="education">EDUCATION</h2>
+            <ul>
+              <li class="section-item">
+                2008 - 2012 <br />
+                Belarusian National Technical University <br />
+                International management
+              </li>
+            </ul>
+          </section class="courses-section">
+          <section>
+            <h2>COURSES</h2>
+            <ul>
+              <li class="section-item">
+                2022 - now <br />
+                JavaScript/Front-end<br />
+                RS School
+              </li>
+            </ul>
+          </section>
+          <section class="languages-section">
+            <h2>LANGUAGES</h2>
+            <ul>
+              <li class="section-item">Russian - native</li>
+              <li class="section-item">English - B1</li>
+            </ul>
+          </section>
+          <section class="certificates-section">
+            <h2>CERTIFICATES</h2>
+            <ul>
+              <li class="section-item">
+                <a href="https://app.rs.school/certificate/iy057yo2"
+                  >JavaScript/Front-end</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="interests-section">
+            <h2>INTERESTS</h2>
+            <ul>
+              <li class="section-item">learning programming</li>
+              <li class="section-item">learning English</li>
+              <li class="section-item">singing</li>
+            </ul>
+          </section>
+        </div>
+        <div class="column-right">
+          <section class="about-section">
+            <h2 class="column-right__header" id="about">ABOUT ME</h2>
+            <p>
+              I'm 32 and I've worked in analytic department where I have an
+              opportunity to write codes. Now I understand that I want to work
+              in the sphere of programming. My goal is to become a strong
+              specialist in Front-end development. My strenghts: eager to learn,
+              purposeful, patient, team player.
+            </p>
+          </section>
+          <section>
+            <h2 class="column-right__header">SKILLS</h2>
+            <ul>
+              <li>HTML5/ CSS3</li>
+              <li>JavaScript/ TypeScript</li>
+              <li>Git/ Github</li>
+              <li>Figma</li>
+              <li>Sass/SCSS</li>
+              <li>Webpack</li>
+              <li>React</li>
+            </ul>
+          </section>
+          <section class="experience-section">
+            <h2 class="column-right__header" id="experience">EXPERIENCE</h2>
+            <div class="experience-item">
+              <span class="experince-year">2022</span>
+              <span>Rolling Scopes School</span>
+              <span
+                >I learned how to develop web pages using HTML/CSS, I developed
+                websites with adaptive and semantic layout. I know client
+                scenarios using Java Script, OOP and it's basic concepts,
+                process and parse data using JSON, the principles of creating
+                asynchronous API requests.
+              </span>
+            </div>
+            <div class="experience-item">
+              <span class="experince-year">2016 - 2020</span>
+              <span>British American Tobacco Company</span>
+              <span
+                >I worked in analytic department therefore I know Microsoft
+                Excel perfectly. I got to know programming(SQL) there.
+              </span>
+            </div>
+            <div class="experience-item">
+              <span class="experince-year">2012 - 2016</span>
+              <span>ОДО "Мостра-групп"</span>
+              <span
+                >I worked as a financial controller. I was responsible for
+                accounts receivable.
+              </span>
+            </div>
+          </section>
+          <section class="projects-section">
+            <h2 class="column-right__header" id="projects">PROJECTS</h2>
+            <ul>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://rslang-final-2022.netlify.app/"
+                  >RS Lang</a
+                >
+                <a class="project-link" href="">link to the code here</a>
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://rolling-scopes-school.github.io/katusha-2010-JSFE2022Q1/online_store/"
+                  >Online store</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSMainCourse/tree/gh-pages/online_store"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://rolling-scopes-school.github.io/katusha-2010-JSFE2022Q1/asyn-race/"
+                  >Async-race</a
+                >
+                <a
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSMainCourse/tree/gh-pages/asyn-race"
+                  >First start server(link here)</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSMainCourse/tree/gh-pages/asyn-race"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://rolling-scopes-school.github.io/katusha-2010-JSFE2022Q1/shelter/pages/main/"
+                  >Shelter</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSMainCourse/tree/gh-pages/shelter"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://katusha-2010.github.io/RSSCHOOL---JSFEPRESCHOOL/eco-sounds/"
+                  >Eco-sounds</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSFEPRESCHOOL/tree/gh-pages/eco-sounds"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://katusha-2010.github.io/RSSCHOOL---JSFEPRESCHOOL/tic-tac-toe/"
+                  >Tic-tac-toe</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSFEPRESCHOOL/tree/gh-pages/tic-tac-toe"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://katusha-2010.github.io/RSSCHOOL---JSFEPRESCHOOL/portfolio/"
+                  >Portfolio for a photographer</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/RSSCHOOL---JSFEPRESCHOOL/tree/gh-pages/portfolio"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://katusha-2010.github.io/virtual-keyboard/virtual-keyboard/"
+                  >Virtual keyboard</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/virtual-keyboard/tree/virtual-keyboard"
+                  >link to the code here</a
+                >
+              </li>
+              <li>
+                <a
+                  class="project-name"
+                  href="https://katusha-2010.github.io/cssMemSlider/cssMemSlider/index.html"
+                  >cssMemSlider</a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/katusha-2010/cssMemSlider/tree/gh-pages"
+                  >link to the code here</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="photo-slider">
+            <button class="btn-prev" disabled>⇦</button>
+            <div class="photo-slider__wrapper">
+              <div class="photo-slider__block">
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/1.jpg"
+                    alt="photo"
+                  />
+                </div>
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/2.jpg"
+                    alt="photo"
+                  />
+                </div>
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/3.jpg"
+                    alt="photo"
+                  />
+                </div>
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/4.jpg"
+                    alt="photo"
+                  />
+                </div>
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/5.jpg"
+                    alt="photo"
+                  />
+                </div>
+                <div class="photo-slider__item">
+                  <img
+                    class="photo-slider__img"
+                    src="./assets/winter/6.jpg"
+                    alt="photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="btn-next">⇨</button>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
