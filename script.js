@@ -20,7 +20,7 @@ burgerBack.addEventListener("click", toggleMenu);
 navList.addEventListener("click", toggleMenu);
 
 let i = 1;
-const widthPhoto = 260;
+const widthPhoto = 230;
 let move = 0;
 
 function slideNext() {
