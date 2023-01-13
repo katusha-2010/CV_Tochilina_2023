@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 li {
@@ -30,6 +31,12 @@ body {
   font-weight: 400;
   background-color: var(--main-bg-color);
   line-height: 1.5;
+}
+
+@media (max-width: 350px) {
+  .body {
+    width: 100vw;
+  }
 }
 
 .wrapper {
@@ -297,7 +304,7 @@ a:hover {
 }
 
 .photo-slider__wrapper {
-  width: 250px;
+  width: 220px;
   overflow: hidden;
   margin: 10px 2px;
 }
