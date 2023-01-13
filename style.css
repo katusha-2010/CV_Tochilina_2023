@@ -33,12 +33,6 @@ body {
   line-height: 1.5;
 }
 
-@media (max-width: 350px) {
-  .body {
-    width: 100vw;
-  }
-}
-
 .wrapper {
   box-shadow: 0 35px 55px rgb(0 0 0 / 80%);
   display: flex;
@@ -63,6 +57,7 @@ body {
   position: absolute;
   background: rgba(41, 41, 41, 0.6);
   margin: 5% auto;
+  transition: 0.5s;
 }
 
 .header__burger {
@@ -71,6 +66,7 @@ body {
   margin: 10px;
   position: relative;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .header__burger::before,
@@ -120,6 +116,7 @@ body {
 .header__nav {
   width: 80%;
   display: none;
+  transition: 0.5s;
 }
 
 .header__nav-list {
@@ -147,6 +144,11 @@ body {
   right: 0;
   background-color: var(--header-underline-color);
   color: var(--neutral-bg-color);
+  transition: 0.5s;
+}
+
+.header__nav-link {
+  text-decoration: none;
 }
 
 .main {
@@ -299,31 +301,26 @@ a:hover {
 
 .photo-slider {
   display: flex;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-}
-
-.photo-slider__wrapper {
-  width: 220px;
-  overflow: hidden;
-  margin: 10px 2px;
-}
-
-.photo-slider__block {
-  display: flex;
-  gap: 10px;
-  position: relative;
-  left: 0px;
+  margin-bottom: 10px;
 }
 
 .photo-slider__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s;
-  width: 100%;
+}
+
+.photo-slider__img {
+  max-width: 100%;
 }
 
 .btn-prev,
 .btn-next {
+  display: block;
   height: 30px;
   border-radius: 50px;
   cursor: pointer;  

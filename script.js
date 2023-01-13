@@ -5,7 +5,7 @@ const navList = document.querySelector(".header__nav-list");
 const headerNav = document.querySelector(".header__nav");
 const btnPrev = document.querySelector(".btn-prev");
 const btnNext = document.querySelector(".btn-next");
-const photoSlider = document.querySelector(".photo-slider__block");
+const photoSliderImage = document.querySelector(".photo-slider__img");
 
 function toggleMenu() {
   burger.classList.toggle("open");
@@ -20,14 +20,11 @@ burgerBack.addEventListener("click", toggleMenu);
 navList.addEventListener("click", toggleMenu);
 
 let i = 1;
-const widthPhoto = 230;
-let move = 0;
 
 function slideNext() {
   btnPrev.disabled = false;
   i++;
-  move -= widthPhoto;
-  photoSlider.style.left = `${move}px`;
+  photoSliderImage.src = `./assets/winter/${i}.jpg`;
   if (i === 6) {
     btnNext.disabled = true;
   }
@@ -36,8 +33,7 @@ function slideNext() {
 function slideBack() {
   btnNext.disabled = false;
   i--;
-  move += widthPhoto;
-  photoSlider.style.left = `${move}px`;
+  photoSliderImage.src = `./assets/winter/${i}.jpg`;
   if (i === 1) {
     btnPrev.disabled = true;
   }
